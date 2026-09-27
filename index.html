@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Wedding | Coming Soon</title>
+  <style>
+    :root {
+      --bg-color: #faf7f2;
+      --card-bg: #ffffff;
+      --primary-color: #9c6644;
+      --text-main: #2b2b2b;
+      --text-muted: #7f7f7f;
+      --accent-color: #ddb892;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border-radius: 20px;
+      padding: 48px 36px;
+      max-width: 520px;
+      width: 100%;
+      text-align: center;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(221, 184, 146, 0.3);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--accent-color), var(--primary-color));
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      background-color: #f7ede2;
+      color: var(--primary-color);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      border-radius: 999px;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--primary-color);
+      margin-bottom: 12px;
+      letter-spacing: 0.5px;
+    }
+
+    p.subtitle {
+      font-size: 16px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 32px;
+    }
+
+    .status-box {
+      background-color: #fbf9f6;
+      border: 1px dashed var(--accent-color);
+      border-radius: 12px;
+      padding: 16px 20px;
+      font-size: 14px;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+
+    .status-dot {
+      width: 10px;
+      height: 10px;
+      background-color: #52b788;
+      border-radius: 50%;
+      box-shadow: 0 0 0 3px rgba(82, 183, 136, 0.2);
+    }
+
+    footer {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="badge">GitHub Pages</div>
+    <h1>Hello, World!</h1>
+    <p class="subtitle">
+      這是部署於 GitHub Pages 的靜態網頁首頁。<br>
+      簡約、輕量且支援響應式佈局。
+    </p>
+
+    <div class="status-box">
+      <span class="status-dot"></span>
+      <span>GitHub Pages 服務連線準備就緒</span>
+    </div>
+
+    <footer>
+      &copy; 2026 Wedding Page. Powered by GitHub Pages.
+    </footer>
+  </main>
+</body>
+</html>
